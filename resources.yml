@@ -34,3 +34,19 @@ resources:
       params:
         foo: booo
         api_url: https://api.shippable.co
+        
+  - name: repo-doption1
+    type: dockerOptions
+    source:
+      memory: 64
+      cpu-shares: 64
+      portMappings:
+        - 80:80
+        
+  - name: repo-doption2
+    type: dockerOptions
+    source:
+      memory: 128
+      cpu-shares: 256
+      portMappings:
+        - 80:3000 
