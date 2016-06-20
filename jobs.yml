@@ -1,0 +1,6 @@
+jobs:
+  - name: repo-manifest
+    type: manifest
+    steps:
+      - GET: repo-image
+      
