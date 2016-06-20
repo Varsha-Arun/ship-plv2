@@ -20,3 +20,16 @@ resources:
       name: "shiphitchcock1/betaci_nod_limitless_pl"
       isPull: false
       tag: "deploy.5"
+      
+  - name: repo-param1
+    type: params
+    source:
+      params:
+        MONGO_API_URL: "localhost:28017"
+        
+  - name: repo-param2
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
