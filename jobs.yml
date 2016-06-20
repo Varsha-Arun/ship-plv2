@@ -3,4 +3,10 @@ jobs:
     type: manifest
     steps:
       - GET: repo-image
+    
+  - name: repo-dcldeploy
+    type: dclDeploy
+    steps:
+      - GET: repo-manifest
+      - GET: repo-dclcluster
       
