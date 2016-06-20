@@ -7,6 +7,14 @@ resources:
       isPull: false
       tag: latest
       
+  - name: repo-image2
+    type: image
+    integration: cock1-hub
+    source:
+      name: "shiphitchcock1/betaci_nod_limitless_pl"
+      isPull: false
+      tag: "deploy.4"
+      
   - name: repo-dclcluster
     type: dclCluster
     integration: varsha-dcl
