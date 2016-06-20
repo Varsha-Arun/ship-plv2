@@ -1,4 +1,3 @@
-
 resources:
   - name: repo-image
     type: image
