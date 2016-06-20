@@ -2,7 +2,7 @@ jobs:
   - name: repo-manifest
     type: manifest
     steps:
-      - GET: repo-image
+      - GET: repo-img
     
   - name: repo-dcldeploy
     type: dclDeploy
