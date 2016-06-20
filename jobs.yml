@@ -25,11 +25,18 @@ jobs:
     steps:
       - GET: repo-manifest
       - GET: repo-dclcluster
-    #  - GET: repo-replica1
+      - GET: repo-replica1
     
   - name: repo-ecsdeploytodcldeploy
     type: dclDeploy
     steps:
       - GET: repo-ecsdeploy
       - GET: repo-dclcluster
-    
+      
+  - name: multimanifest-dcldeploy
+    type: dclDeploy
+    steps:
+      - GET: repo-manifest
+      - GET: repo-manifest2
+      - GET: repo-dclcluster
+      
