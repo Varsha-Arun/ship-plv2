@@ -12,3 +12,11 @@ resources:
     integration: varsha-dcl
     source:
      name : "test-node"
+     
+  - name: repo-img
+    type: image
+    integration: cock1-hub
+    source:
+      name: "shiphitchcock1/betaci_nod_limitless_pl"
+      isPull: false
+      tag: "deploy.5"
