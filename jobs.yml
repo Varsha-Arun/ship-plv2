@@ -11,7 +11,8 @@ jobs:
     type: manifest
     steps:
       - GET: repo-image2
-      - GET: repo-doption2
+      - GET: repo-param2
+     # - GET: repo-doption2
     
   - name: repo-dcldeploy
     type: dclDeploy
