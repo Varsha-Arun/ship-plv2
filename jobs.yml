@@ -4,6 +4,7 @@ jobs:
     steps:
       - GET: repo-img
       - GET: repo-param1
+      - GET: repo-doption2
     
   - name: repo-dcldeploy
     type: dclDeploy
@@ -11,3 +12,4 @@ jobs:
       - GET: repo-manifest
       - GET: repo-dclcluster
       - GET: repo-param2
+      - GET: repo-doption1
