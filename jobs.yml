@@ -5,6 +5,7 @@ jobs:
       - GET: repo-img
       - GET: repo-param1
       - GET: repo-doption2
+      - GET: repo-replica2
     
   - name: repo-dcldeploy
     type: dclDeploy
@@ -13,3 +14,4 @@ jobs:
       - GET: repo-dclcluster
       - GET: repo-param2
       - GET: repo-doption1
+      - GET: repo-replica1
