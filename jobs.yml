@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: repo-img
       - GET: repo-param1
-      - GET: repo-doption2
+      #- GET: repo-doption2
       - GET: repo-replica2
       
   - name: repo-manifest2
