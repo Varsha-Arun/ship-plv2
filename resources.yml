@@ -1,13 +1,5 @@
 resources:
-  - name: repo-image
-    type: image
-    integration: cock1-hub
-    source:
-      name: "shiphitchcock1/samplenod"
-      isPull: false
-      tag: latest
-      
-  - name: repo-image2
+  - name: repo-img1
     type: image
     integration: cock1-hub
     source:
@@ -15,42 +7,42 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: repo-dclcluster
-    type: dclCluster
-    integration: varsha-dcl
+  - name: repo-img2
+    type: image
+    integration: cock1-hub
     source:
-     name : "test-node"
+      name: "shiphitchcock1/betaci_nod_limitless_pl"
+      isPull: true
+      tag: "deploy.5"
+      
+ # - name: repo-dclcluster1
+ #   type: dclCluster
+  #  integration: varsha-dcl
+  #  source:
+   #  name : "test-node"
      
-  - name: repo-ecscluster
+  - name: repo-ecscluster1
     type: ecsCluster
     integration: varsha-ecscluster
     source:
       name : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
-     
-  - name: repo-img
-    type: image
-    integration: cock1-hub
-    source:
-      name: "shiphitchcock1/betaci_nod_limitless_pl"
-      isPull: false
-      tag: "deploy.5"
-      
-  - name: repo-param1
+  
+  - name: repo-params1
     type: params
     source:
       params:
         api_url : "betaapi.shippable.co"
         MONGO_API_URL: "localhost:28017"
         
-  - name: repo-param2
+  - name: repo-params2
     type: params
     source:
       params:
         foo: booo
         api_url: https://api.shippable.co
         
-  - name: repo-doption1
+  - name: repo-dopts1
     type: dockerOptions
     source:
       memory: 64
@@ -58,7 +50,7 @@ resources:
       portMappings:
         - 80:80
         
-  - name: repo-doption2
+  - name: repo-dopts2
     type: dockerOptions
     source:
       memory: 128
@@ -66,12 +58,12 @@ resources:
       portMappings:
         - 80:3000 
         
-  - name: repo-replica1
+  - name: repo-repl1
     type: replicas
     source:
       count: 1
       
-  - name: repo-replica2
+  - name: repo-repl2
     type: replicas
     source:
       count: 2
