@@ -77,3 +77,10 @@ resources:
     source:
       count: 2
       
+  - name: uge-shipplv2
+    type: gitRepo
+    integration: varshaarun-github
+    source:
+      name: "Varsha-Arun/ship-plv2" #you should've access to this project (even if it's public)
+      branch: "upgrade-ecsdeploy"
+      
