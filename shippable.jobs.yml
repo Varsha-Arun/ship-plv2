@@ -14,6 +14,14 @@ jobs:
     steps:
       - GET: bge-manifest1
       - GET: bge-ecscluster1
+      
+  - name: bge1-ecsdeploy
+    type: ecsDeploy
+    options: 
+      deployMethod: blueGreen
+    steps:
+      - GET: bge-manifest1
+      - GET: bge-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
