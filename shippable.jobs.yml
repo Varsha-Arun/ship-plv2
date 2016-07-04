@@ -2,7 +2,7 @@ jobs:
   - name: uge-manifest1
     type: manifest
     steps:
-      - GET: uge-img2
+      - GET: uge-img1
       
  # - name: ship-manifest2
   #  type: manifest
