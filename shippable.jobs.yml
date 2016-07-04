@@ -1,0 +1,37 @@
+jobs:
+  - name: ship-manifest1
+    type: manifest
+    steps:
+      - GET: ship-img1
+      
+  - name: ship-manifest2
+    type: manifest
+    steps:
+      - GET: ship-img2
+     
+#  - name: repo-ecsdeploy
+ #   type: ecsDeploy
+  #  steps:
+   #   - GET: repo-manifest2
+    #  - GET: repo-ecscluster
+    
+  #- name: repo-dcldeploy
+   # type: dclDeploy
+    #steps:
+     # - GET: repo-manifest
+      #- GET: repo-dclcluster
+      #- GET: repo-replica1
+    
+  #- name: repo-ecsdeploytodcldeploy
+   # type: dclDeploy
+    #steps:
+     # - GET: repo-ecsdeploy
+      #- GET: repo-dclcluster
+      
+#  - name: multimanifest-dcldeploy
+ #   type: dclDeploy
+  #  steps:
+   #   - GET: repo-manifest
+    #  - GET: repo-manifest2
+     # - GET: repo-dclcluster
+      
