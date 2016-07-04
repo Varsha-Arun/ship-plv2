@@ -16,6 +16,13 @@ resources:
       isPull: false
       tag: "deploy.5"
       
+  - name: bg-shipplv2
+    type: gitRepo
+    integration: varshaarun-github
+    source:
+      name: "Varsha-Arun/ship-plv2" #you should've access to this project (even if it's public)
+      branch: bluegreen
+      
  # - name: ship-dclcluster1
   #  type: dclCluster
    # integration: varsha-dcl
