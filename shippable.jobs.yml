@@ -4,10 +4,10 @@ jobs:
     steps:
       - GET: ship-img1
       
-  - name: ship-manifest2
-    type: manifest
-    steps:
-      - GET: ship-img2
+ # - name: ship-manifest2
+  #  type: manifest
+   # steps:
+    #  - GET: ship-img2
      
 #  - name: repo-ecsdeploy
  #   type: ecsDeploy
