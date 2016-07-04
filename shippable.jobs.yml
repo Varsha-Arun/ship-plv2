@@ -2,7 +2,7 @@ jobs:
   - name: bge-manifest1
     type: manifest
     steps:
-      - GET: bge-img1
+      - GET: bge-img2
       
  # - name: ship-manifest2
   #  type: manifest
