@@ -1,8 +1,8 @@
 jobs:
-  - name: bge-manifest1
+  - name: uge-manifest1
     type: manifest
     steps:
-      - GET: bge-img1
+      - GET: uge-img2
       
  # - name: ship-manifest2
   #  type: manifest
@@ -15,13 +15,13 @@ jobs:
    #   - GET: bge-manifest1
    #   - GET: bge-ecscluster1
       
-  - name: bge1-ecsdeploy
+  - name: uge1-ecsdeploy
     type: ecsDeploy
     options: 
-      deployMethod: blueGreen
+      deployMethod: upgrade
     steps:
-      - GET: bge-manifest1
-      - GET: bge-ecscluster1
+      - GET: uge-manifest1
+      - GET: uge-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
