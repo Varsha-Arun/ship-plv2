@@ -2,18 +2,18 @@ jobs:
   - name: bge-manifest1
     type: manifest
     steps:
-      - GET: bge-img2
+      - GET: bge-img1
       
  # - name: ship-manifest2
   #  type: manifest
    # steps:
     #  - GET: ship-img1
      
-  - name: bge-ecsdeploy
-    type: ecsDeploy
-    steps:
-      - GET: bge-manifest1
-      - GET: bge-ecscluster1
+ # - name: bge-ecsdeploy
+ #   type: ecsDeploy
+   # steps:
+   #   - GET: bge-manifest1
+   #   - GET: bge-ecscluster1
       
   - name: bge1-ecsdeploy
     type: ecsDeploy
