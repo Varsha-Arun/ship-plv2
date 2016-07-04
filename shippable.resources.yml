@@ -1,6 +1,6 @@
 resources:
       
-  - name: ship-img1
+  - name: bge-img1
     type: image
     integration: cock1-hub
     source:
@@ -8,7 +8,7 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: ship-img2
+  - name: bge-img2
     type: image
     integration: cock1-hub
     source:
@@ -16,42 +16,64 @@ resources:
       isPull: false
       tag: "deploy.5"
       
- # - name: ship-dclcluster1
-  #  type: dclCluster
-   # integration: varsha-dcl
-    #source:
-     #name : "test-node"
-     
-  #- name: ship-ecscluster1
-   # type: ecsCluster
-    #integration: varsha-ecscluster
-    #source:
-     # name : "testCL" #name of the cluster we are deploying
-      #region: "us-west-2"
+  - name: bge-img3
+    type: image
+    integration: cock1-hub
+    source:
+      name: "shiphitchcock1/betaci_nod_limitless_pl"
+      isPull: false
+      tag: "pipeline.7"
       
- # - name: ship-param1
-  #  type: params
-   # source:
-    #  params:
-     #   api_url : "betaapi.shippable.co"
-      #  MONGO_API_URL: "localhost:28017"
+  - name: bge-dclcluster1
+    type: dclCluster
+    integration: varsha-dcl
+    source:
+     name : "test-node"
+     
+  - name: bge-ecscluster1
+    type: ecsCluster
+    integration: varsha-ecscluster
+    source:
+      name : "testCL" #name of the cluster we are deploying
+      region: "us-west-2"
+      
+  - name: bge-param1
+    type: params
+    source:
+      params:
+        api_url : "betaapi.shippable.co"
+        MONGO_API_URL: "localhost:28017"
         
- # - name: ship-param2
-  #  type: params
-   # source:
-    #  params:
-     #   foo: booo
-      #  api_url: https://api.shippable.co
+  - name: bge-param2
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
         
-  #- name: ship-doption1
-   # type: dockerOptions
-    #source:
-     # memory: 128
-      #cpu-shares: 4
-      #portMappings:
-       # - 80:80
+  - name: bge-dopt1
+    type: dockerOptions
+    source:
+      memory: 128
+      cpu-shares: 4
+      portMappings:
+        - 80:80
         
-#  - name: ship-replica1
- #   type: replicas
-  #  source:
-   #   count: 1
+  - name: bge-dopt2
+    type: dockerOptions
+    source:
+      memory: 60
+      cpu-shares: 8
+      portMappings:
+        - 80:3000
+        
+  - name: bge-replica1
+    type: replicas
+    source:
+      count: 1
+      
+  - name: bge-replica2
+    type: replicas
+    source:
+      count: 2
+      
