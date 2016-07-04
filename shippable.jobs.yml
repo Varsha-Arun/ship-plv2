@@ -9,11 +9,11 @@ jobs:
    # steps:
     #  - GET: ship-img1
      
-#  - name: repo-ecsdeploy
- #   type: ecsDeploy
-  #  steps:
-   #   - GET: repo-manifest2
-    #  - GET: repo-ecscluster
+  - name: bge-ecsdeploy
+    type: ecsDeploy
+    steps:
+      - GET: bge-manifest1
+      - GET: bge-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
