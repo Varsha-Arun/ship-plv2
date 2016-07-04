@@ -1,13 +1,6 @@
 resources:
-  - name: repo-image
-    type: image
-    integration: cock1-hub
-    source:
-      name: "shiphitchcock1/samplenod"
-      isPull: false
-      tag: latest
       
-  - name: repo-image2
+  - name: ship-img1
     type: image
     integration: cock1-hub
     source:
@@ -15,20 +8,7 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: repo-dclcluster
-    type: dclCluster
-    integration: varsha-dcl
-    source:
-     name : "test-node"
-     
-  - name: repo-ecscluster
-    type: ecsCluster
-    integration: varsha-ecscluster
-    source:
-      name : "testCL" #name of the cluster we are deploying
-      region: "us-west-2"
-     
-  - name: repo-img
+  - name: ship-img2
     type: image
     integration: cock1-hub
     source:
@@ -36,42 +16,42 @@ resources:
       isPull: false
       tag: "deploy.5"
       
-  - name: repo-param1
-    type: params
-    source:
-      params:
-        api_url : "betaapi.shippable.co"
-        MONGO_API_URL: "localhost:28017"
-        
-  - name: repo-param2
-    type: params
-    source:
-      params:
-        foo: booo
-        api_url: https://api.shippable.co
-        
-  - name: repo-doption1
-    type: dockerOptions
-    source:
-      memory: 64
-      cpu-shares: 64
-      portMappings:
-        - 80:80
-        
-  - name: repo-doption2
-    type: dockerOptions
-    source:
-      memory: 128
-      #cpu-shares: 256
-      portMappings:
-        - 80:3000 
-        
-  - name: repo-replica1
-    type: replicas
-    source:
-      count: 1
+ # - name: ship-dclcluster1
+  #  type: dclCluster
+   # integration: varsha-dcl
+    #source:
+     #name : "test-node"
+     
+  #- name: ship-ecscluster1
+   # type: ecsCluster
+    #integration: varsha-ecscluster
+    #source:
+     # name : "testCL" #name of the cluster we are deploying
+      #region: "us-west-2"
       
-  - name: repo-replica2
-    type: replicas
-    source:
-      count: 2
+ # - name: ship-param1
+  #  type: params
+   # source:
+    #  params:
+     #   api_url : "betaapi.shippable.co"
+      #  MONGO_API_URL: "localhost:28017"
+        
+ # - name: ship-param2
+  #  type: params
+   # source:
+    #  params:
+     #   foo: booo
+      #  api_url: https://api.shippable.co
+        
+  #- name: ship-doption1
+   # type: dockerOptions
+    #source:
+     # memory: 128
+      #cpu-shares: 4
+      #portMappings:
+       # - 80:80
+        
+#  - name: ship-replica1
+ #   type: replicas
+  #  source:
+   #   count: 1
