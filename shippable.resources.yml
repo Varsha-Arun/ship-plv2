@@ -1,6 +1,6 @@
 resources:
       
-  - name: bge-img1
+  - name: uge-img1
     type: image
     integration: cock1-hub
     source:
@@ -8,7 +8,7 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: bge-img2
+  - name: uge-img2
     type: image
     integration: cock1-hub
     source:
@@ -16,7 +16,7 @@ resources:
       isPull: false
       tag: "deploy.5"
       
-  - name: bge-img3
+  - name: uge-img3
     type: image
     integration: cock1-hub
     source:
@@ -24,34 +24,34 @@ resources:
       isPull: false
       tag: "pipeline.7"
       
-  - name: bge-dclcluster1
+  - name: uge-dclcluster1
     type: dclCluster
     integration: varsha-dcl
     source:
      name : "test-node"
      
-  - name: bge-ecscluster1
+  - name: uge-ecscluster1
     type: ecsCluster
     integration: varsha-ecscluster
     source:
       name : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
       
-  - name: bge-param1
+  - name: uge-param1
     type: params
     source:
       params:
         api_url : "betaapi.shippable.co"
         MONGO_API_URL: "localhost:28017"
         
-  - name: bge-param2
+  - name: uge-param2
     type: params
     source:
       params:
         foo: booo
         api_url: https://api.shippable.co
         
-  - name: bge-dopt1
+  - name: uge-dopt1
     type: dockerOptions
     source:
       memory: 128
@@ -59,7 +59,7 @@ resources:
       portMappings:
         - 80:80
         
-  - name: bge-dopt2
+  - name: uge-dopt2
     type: dockerOptions
     source:
       memory: 60
@@ -67,12 +67,12 @@ resources:
       portMappings:
         - 80:3000
         
-  - name: bge-replica1
+  - name: uge-replica1
     type: replicas
     source:
       count: 1
       
-  - name: bge-replica2
+  - name: uge-replica2
     type: replicas
     source:
       count: 2
