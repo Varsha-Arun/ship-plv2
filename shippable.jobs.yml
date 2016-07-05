@@ -3,8 +3,8 @@ jobs:
     type: manifest
     steps:
       - GET: bge-img1
-      - GET: bge-param2
-      - GET: bge-dopt2
+     # - GET: bge-param2
+     # - GET: bge-dopt2
       - GET: bge-replica1
       
  # - name: ship-manifest2
