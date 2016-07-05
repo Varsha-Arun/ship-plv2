@@ -52,6 +52,7 @@ jobs:
       - GET: bge-manifest1
      # - GET: bge-manifest2
       - GET: bge-ecscluster1
+      - GET: bge-dopt2
     
   #- name: repo-dcldeploy
    # type: dclDeploy
