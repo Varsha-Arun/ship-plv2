@@ -5,6 +5,7 @@ jobs:
       - GET: bge-img1
       - GET: bge-param2
       - GET: bge-dopt2
+      - GET: bge-replica3
       
  # - name: ship-manifest2
   #  type: manifest
