@@ -7,10 +7,18 @@ jobs:
      # - GET: bge-dopt2
       - GET: bge-replica1
       
- # - name: ship-manifest2
-  #  type: manifest
-   # steps:
-    #  - GET: ship-img1
+  - name: bge-manifest2
+    type: manifest
+    steps:
+      - GET: bge-img2
+      - GET: bge-dopt2
+      
+  - name: bge-manifest3
+    type: manifest
+    steps:
+      - GET: bge-img3
+      - GET: bge-img1
+      - GET: bge-param2
      
  # - name: bge-ecsdeploy
  #   type: ecsDeploy
@@ -28,6 +36,14 @@ jobs:
       - GET: bge-param1
       - GET: bge-dopt1
       #- GET: bge-replica2
+      
+  - name: bge2-ecsdeploy
+    type: ecsDeploy
+    options: 
+      deployMethod: blueGreen
+    steps:
+      - GET: bge-manifest3
+      - GET: bge-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
