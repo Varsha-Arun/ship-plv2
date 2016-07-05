@@ -43,6 +43,7 @@ jobs:
       deployMethod: blueGreen
     steps:
       - GET: bge-manifest3
+      - GET: bge-manifest2
       - GET: bge-ecscluster1
     
   #- name: repo-dcldeploy
