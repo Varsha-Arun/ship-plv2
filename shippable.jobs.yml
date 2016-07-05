@@ -24,6 +24,7 @@ jobs:
     steps:
       - GET: bge-manifest1
       - GET: bge-ecscluster1
+      - GET: bge-param1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
