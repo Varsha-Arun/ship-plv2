@@ -56,16 +56,16 @@ resources:
     source:
       memory: 128
       cpu-shares: 4
-      portMappings:
-        - 80:80
+      #portMappings:
+       # - 80:80
         
   - name: bge-dopt2
     type: dockerOptions
     source:
       memory: 60
       cpu-shares: 8
-      portMappings:
-        - 80:3000
+      #portMappings:
+       # - 80:3000
         
   - name: bge-replica1
     type: replicas
