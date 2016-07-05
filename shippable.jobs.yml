@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: bge-img1
       - GET: bge-param2
-      - GET: bge-dopt1
+      - GET: bge-dopt2
       
  # - name: ship-manifest2
   #  type: manifest
