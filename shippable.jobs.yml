@@ -27,6 +27,7 @@ jobs:
       - GET: bge-ecscluster1
       - GET: bge-param1
       - GET: bge-dopt1
+      - GET: bge-replica2
     
   #- name: repo-dcldeploy
    # type: dclDeploy
