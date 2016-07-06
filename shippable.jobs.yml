@@ -3,8 +3,8 @@ jobs:
     type: manifest
     steps:
       - GET: uge-img3
-      - GET: uge-param1
-      - GET: uge-dopt1
+     # - GET: uge-param1
+      #- GET: uge-dopt1
       
  # - name: ship-manifest2
   #  type: manifest
@@ -17,7 +17,7 @@ jobs:
    #   - GET: bge-manifest1
    #   - GET: bge-ecscluster1
       
-  - name: uge1-ecsdeploy
+  - name: uge2-ecsdeploy
     type: ecsDeploy
     options: 
       deployMethod: upgrade
