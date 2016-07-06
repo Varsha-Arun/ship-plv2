@@ -24,6 +24,14 @@ jobs:
     steps:
       - GET: uge-manifest1
       - GET: uge-ecscluster1
+      
+  - name: upgradeecs-testv
+    type: ecsDeploy
+    options: 
+      deployMethod: upgrade
+    steps:
+      - GET: uge-manifest1
+      - GET: uge-ecscluster1
     
   #- name: repo-dcldeploy
    # type: dclDeploy
