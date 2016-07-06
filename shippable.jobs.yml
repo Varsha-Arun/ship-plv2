@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: uge-img3
       - GET: uge-param1
-      #- GET: uge-dopt1
+      - GET: uge-dopt1
       
  # - name: ship-manifest2
   #  type: manifest
