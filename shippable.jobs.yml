@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - GET: ugenew-img1
+      - GET: uge-param1
       
  # - name: ship-manifest2
   #  type: manifest
