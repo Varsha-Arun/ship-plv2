@@ -1,17 +1,8 @@
 jobs:
-  - name: uge-manifest1
+  - name: newuge-manifest1
     type: manifest
     steps:
-      - GET: uge-img3
-      - GET: uge-param1
-      - GET: uge-dopt1
-      
-  - name: uge-mfuge1
-    type: manifest
-    steps:
-      - GET: uge-img3
-     # - GET: uge-param1
-     # - GET: uge-dopt1
+      - GET: ugenew-img1
       
  # - name: ship-manifest2
   #  type: manifest
@@ -24,28 +15,12 @@ jobs:
    #   - GET: bge-manifest1
    #   - GET: bge-ecscluster1
       
-  - name: uge2-ecsdeploy
+  - name: newuge1-ecsdeploy
     type: ecsDeploy
     options: 
       deployMethod: upgrade
     steps:
-      - GET: uge-manifest1
-      - GET: uge-ecscluster1
-      
-  - name: upgradeecs-testv
-    type: ecsDeploy
-    options: 
-      deployMethod: upgrade
-    steps:
-      - GET: uge-manifest1
-      - GET: uge-ecscluster1
-      
-  - name: ugenew1-ecsdeploy
-    type: ecsDeploy
-    options: 
-      deployMethod: upgrade
-    steps:
-      - GET: uge-mfuge1
+      - GET: newuge-manifest1
       - GET: uge-ecscluster1
     
   #- name: repo-dcldeploy
