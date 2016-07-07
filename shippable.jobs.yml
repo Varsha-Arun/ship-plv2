@@ -6,6 +6,13 @@ jobs:
       - GET: uge-param1
       - GET: uge-dopt1
       
+  - name: uge-mfuge1
+    type: manifest
+    steps:
+      - GET: uge-img3
+     # - GET: uge-param1
+     # - GET: uge-dopt1
+      
  # - name: ship-manifest2
   #  type: manifest
    # steps:
@@ -31,6 +38,14 @@ jobs:
       deployMethod: upgrade
     steps:
       - GET: uge-manifest1
+      - GET: uge-ecscluster1
+      
+  - name: ugenew1-ecsdeploy
+    type: ecsDeploy
+    options: 
+      deployMethod: upgrade
+    steps:
+      - GET: uge-mfuge1
       - GET: uge-ecscluster1
     
   #- name: repo-dcldeploy
