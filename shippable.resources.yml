@@ -1,6 +1,6 @@
 resources:
       
-  - name: ecs-img1
+  - name: ship-img1
     type: image
     integration: cock1-hub
     source:
@@ -8,7 +8,7 @@ resources:
       isPull: false
       tag: "deploy.4"
       
-  - name: ecs-img2
+  - name: ship-img2
     type: image
     integration: cock1-hub
     source:
@@ -22,28 +22,28 @@ resources:
     #source:
      #name : "test-node"
      
-  - name: ecs-ecscluster1
+  - name: ship-ecscluster1
     type: ecsCluster
     integration: varsha-ecscluster
     source:
       name : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
       
-  - name: ecs-param1
+  - name: ship-param1
     type: params
     source:
       params:
         api_url : "betaapi.shippable.co"
         MONGO_API_URL: "localhost:28017"
         
-  - name: ecs-param2
+  - name: ship-param2
     type: params
     source:
       params:
         foo: booo
         api_url: https://api.shippable.co
         
-  - name: ecs-dopt1
+  - name: ship-dopt1
     type: dockerOptions
     source:
       memory: 64
@@ -51,12 +51,12 @@ resources:
       portMappings:
         - 80:80
         
-  - name: ecs-replica1
+  - name: ship-replica1
     type: replicas
     source:
       count: 1
       
-  - name: ecs-replica2
+  - name: ship-replica2
     type: replicas
     source:
       count: 2
